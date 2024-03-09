@@ -1,0 +1,23 @@
+{
+    "products":
+    [
+        {
+            "productNumber": "A1",
+            "productName": "Pasta",
+            "description": "A package of pasta",
+            "price": 0.99
+        },
+        {
+            "productNumber": "A2",
+            "productName": "DOOM",
+            "description": "A book about demons on Mars",
+            "price": 6.66
+        },
+        {
+            "productNumber": "A3",
+            "productName": "Star Wars",
+            "description": "A book about people fighting in space",
+            "price": 99.99
+        }
+    ]
+}
