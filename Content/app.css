@@ -58,3 +58,9 @@
     top: -31px;
     display: none;
 }
+.centered-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
