@@ -1,6 +1,8 @@
 "use strict";
 // User Class
-
+// Name : Samuel Abraham, Sandeep Kuamr
+// Student id : 100870571 , 100844683
+// Date : 14-03-2024
 ((core)=>
 {
   class User 

@@ -3,6 +3,9 @@
 //IIFE - Immediately Invoked Function Expression
 //AKA - Anonymous Self-Executing Function
 //Closure - limits scope leak
+// Name : Samuel Abraham, Sandeep Kuamr
+// Student id : 100870571 , 100844683
+// Date : 14-03-2024
 
 "use strict";
 
