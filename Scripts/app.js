@@ -74,49 +74,55 @@
         $("footer").html(data);
       });
     }
-
-    function displayHome()
-    {
+    function displayHome() {
+      // Update home page header
       document.getElementById("homeheader").textContent = "Home";
-      document.getElementById("Homegreetings").textContent = "Welcome to Our Company Website , it is a pleasure to have you here";
-        
+      // Display welcome message
+      document.getElementById("Homegreetings").textContent = "Welcome to Our Company Website, it is a pleasure to have you here";
     }
-
-    function displayAbout()
-    {
-        // Add content to about.html
-        document.getElementById("AboutHeading").textContent = "About";
-        document.getElementById("Student1Header").textContent = "Samuel Abraham";
-        document.getElementById("Student1About").innerHTML = "About Samuel: Welcome to my corner of the internet! My name is Samuel, and I'm thrilled to have you here. Let me share a bit about myself and what you can expect from this space.";
-        document.getElementById("Student2Header").textContent = "Sandeep Kumar";
-        document.getElementById("Student2About").innerHTML = "Sandeep Kumar, a dedicated professional hailing from [Location], brings a wealth of experience and expertise to his endeavors. With a passion for [industry or field], Sandeep has established himself as a respected figure known for his innovative thinking and unwavering commitment to excellence. His journey is a testament to perseverance and determination, as he continuously seeks new challenges and opportunities for growth. Whether leading teams, implementing strategies, or fostering meaningful connections, Sandeep approaches each task with enthusiasm and a drive to make a positive impact. His remarkable journey inspires others to reach for their highest aspirations.";
+    function displayAbout() {
+      // Update about page heading
+      document.getElementById("AboutHeading").textContent = "About";
+      // Display information about Student 1
+      document.getElementById("Student1Header").textContent = "Samuel Abraham";
+      document.getElementById("Student1About").innerHTML = "About Samuel: Welcome to my corner of the internet! My name is Samuel, and I'm thrilled to have you here. Let me share a bit about myself and what you can expect from this space.";
+      // Display information about Student 2
+      document.getElementById("Student2Header").textContent = "Sandeep Kumar";
+      document.getElementById("Student2About").innerHTML = "Sandeep Kumar, a dedicated professional hailing from [Location], brings a wealth of experience and expertise to his endeavors. With a passion for [industry or field], Sandeep has established himself as a respected figure known for his innovative thinking and unwavering commitment to excellence. His journey is a testament to perseverance and determination, as he continuously seeks new challenges and opportunities for growth. Whether leading teams, implementing strategies, or fostering meaningful connections, Sandeep approaches each task with enthusiasm and a drive to make a positive impact. His remarkable journey inspires others to reach for their highest aspirations.";
     }
-
-    function displayProjects()
-    {
-      // Add content to projects.html
+    function displayProjects() {
+      // Update projects page header
       document.getElementById("FirstProjectHeader").textContent = "Projects";
+      // Display information about Project 1
       document.getElementById("FirstprojectHeader").textContent = "Project 1";
       document.getElementById("Firstproject").innerHTML = "In the depths of our innovation lab, where ideas dance with possibility, we embarked on a quest to revolutionize the way we interact with data. Armed with cutting-edge technology and a dash of audacity, our team set out to create a project that would not only push the boundaries of what's possible but also redefine the very fabric of our digital landscape. What emerged was more than just a solution; it was a symphony of ingenuity and creativity—a testament to our unwavering commitment to excellence. As we unveiled our creation to the world, we knew that we had embarked on a journey that would shape the future of our industry. ";
-      document.getElementById("SecondProjectHeader"). textContent = "Project 2";
+      // Display information about Project 2
+      document.getElementById("SecondProjectHeader").textContent = "Project 2";
       document.getElementById("SecondProject").innerHTML = "In the heart of our digital laboratory, amidst the hum of servers and the glow of monitors, a .i file sparked our curiosity. Encoded within its binary depths lay the key to unlocking a new dimension of possibility. With fervor and precision, our team dissected its enigmatic code, revealing secrets that defied conventional understanding.As the lines of code danced before our eyes, we uncovered a world of untapped potential. With each byte deciphered, we gained insight into the intricate tapestry of data and logic. What began as a mere file transformed into a beacon of innovation, guiding us towards uncharted territories of technological advancement.";
+      // Display information about Project 3
       document.getElementById("ThirdProjectHeader").textContent = "Project 3";
       document.getElementById("ThirdProject").innerHTML = "In the tapestry of nature, flowers bloom as delicate jewels, adorning the earth with their vibrant hues and intoxicating fragrances. Each petal is a masterpiece of design, unfurling with grace and elegance to capture the essence of life itself.From the fiery passion of the scarlet rose to the serene beauty of the white lily, flowers weave stories of love, hope, and renewal. Their whispers on the breeze carry the secrets of the earth, inviting us to pause and drink in the beauty that surrounds us.";
-
     }
-
-    function displayServices()
-    {
-      
+    
+    function displayServices() {
+      // Update services page header
       document.getElementById("ServicesHeader").textContent = "Services";
+      // Display information about Web Development Website service
       document.getElementById("ServiceHeader").innerHTML = "<br/>Web Development Website";
       document.getElementById("Service").innerHTML = "A company's website is more than just an online presence; it's a digital gateway to their identity, values, and offerings. Much like a well-designed storefront, a company's website welcomes visitors with open arms, inviting them to explore, engage, and connect.At its core, a company website serves as a virtual showcase, spotlighting products, services, and innovations. Through intuitive navigation and captivating visuals, it guides visitors on a journey of discovery, providing them with the information they seek and the inspiration they crave.";
-      document.getElementById("ServiceHeader2").innerHTML = "<br/>Aritifical Intellingence";
+      // Display information about Artificial Intelligence service
+      document.getElementById("ServiceHeader2").innerHTML = "<br/>Artificial Intelligence";
       document.getElementById("Service2").innerHTML = "Armed with newfound knowledge and a thirst for discovery, we forged ahead, weaving the essence of the .i file into the fabric of our project. Its essence became a cornerstone of our solution, imbuing it with unparalleled efficiency and elegance.As we stand on the precipice of a new era, the .i file serves as a reminder of our relentless pursuit of excellence and our unwavering dedication to pushing the boundaries of what's possible in the digital realm.";
+      // Display information about Database Services
       document.getElementById("ServiceThirdHeader").innerHTML = "<br/>Database Services";
       document.getElementById("ServiceThird").innerHTML = "A company database serves as the backbone of its operations, housing a wealth of critical information essential for day-to-day functions and long-term strategic decision-making. Much like a well-organized library, a company database categorizes and stores data in a structured manner, making it easily accessible and searchable for authorized users.At its core, a company database is a repository of valuable insights, containing everything from customer information and sales data to inventory levels and financial records. It acts as a central hub where disparate pieces of information converge, providing a comprehensive view of the company's activities and performance. ";
-      
     }
+// Function to display content for the Home page
+// Function to display content for the About page
+// Function to display content for the Projects page
+// Function to display content for the Services page
+
+
 
     function testFullName()
     {
