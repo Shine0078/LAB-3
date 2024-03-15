@@ -1,115 +1,113 @@
-<!--
-   Authors      : Sandeep Kumar  &   Samuel Abraham
-   Student ID   : 100844683   &   100870571
-   Date         : 14 Feb 2023
-   Description  : This is the services page.
-      
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- CSS SECTION-->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="./Content/app.css">
-    <title>INFT2202 - Lesson 5</title>
+    <title>Contact</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../Content/app.css">
 </head>
 <body>
-    <!-- Main Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">INFT2202</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <ul id = "nav">
-              <li id ="contact"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
-              <li id ="about"><a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
-              <li id ="services"><a href="services.html"><i class="fa-solid fa-bell"></i> Services</a></li>
-              <li id ="products"><a href="products.html"><i class="fa-solid fa-border-all"></i> Products</a></li>
-              <li id ="index"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>      
-              <li style="float:left; padding: 14px 16px; color: white; text-align: center;">WEBD6201 - LAB 2</li>
-              <li id="login" class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>    
-            </ul>
+    <!-- Main Header -->
+    <header>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">INFT2202 - Lab 3</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html"><i class="fas fa-home fa-lg"></i> Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./projects.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./services.html"><i class="fas fa-map fa-lg"></i> Services</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contact.html"><i class="fas fa-phone fa-lg"></i> Contact Us</a>
+                  </li>
+
+                  <li id="login" class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Contact Us</h1>
+        <div id="messageArea"></div>
+
+        <div class="row justify-content-lg-center g-3">
+          <form class="col-lg-6 col-md-10 col-sm-10">
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Full Name </span>
+              <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-describedby="Full Name Input"
+              name="fullName" required>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
+              <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-describedby="Contact Number Input"
+              name="contactNumber" required>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+              <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-describedby="Email Address Input"
+              name="emailAddress" required>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">Your Message</span>
+              <textarea id="message" class="form-control" aria-label="With textarea" required></textarea>
+            </div>
+  
+            <div class="form-check mb-3">
+              <input id="subscribeCheckbox" class="form-check-input" type="checkbox" value="" name="subscribeCheckbox">
+              <label class="form-check-label" for="subscribeCheckbox"> Subscribe to our Contact List</label>
+            </div>
+
+            <button id="sendButton" type="submit" class="btn btn-primary"><i class="fas fa-envelope fa-lg"></i> Send</button>
+            <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
+          </form>
         </div>
-      </nav>
+    </main>
 
-      <!-- Main Content -->
-      <main class="container" id="mainContent">
-          <div class="row">
-              <div class="offset-md-3 col-md-6 col-sm-12">
-                    <div class="jumbotron" id="contentArea">
-                        <h1 class="display-4">Contact Me.</h1>
-
-                        <form id="contactForm" method="POST">
-                          <div id="errorMessage" class="alert alert-danger">
-                            Error message will go here...
-                          </div>
-                          <div class="form-group">
-                            <label for="contactName">Full Name:</label>
-                            <input type="tel" class="form-control" id="contactName" name="contactName"  required
-                            value="" placeholder="Enter your full name">
-                          </div>
-
-                          <div class="form-group">
-                            <label for="emailAddress">Email Address</label>
-                            <input type="email" class="form-control" id="emailAddress" name="emailAddress" required
-                            value="" placeholder="Enter your email address: name@example.com">
-                          </div>
-
-                          <div class="form-group">
-                            <label for="contactNumber">Contact Number:</label>
-                            <input type="text" class="form-control" id="contactNumber" name="contactNumber"  required
-                            value="" placeholder="Enter your telephone number: (###) ###-####">
-                          </div>
-
-                          <div class="form-group">
-                            <label for="contactMessage">Your Message</label>
-                            <textarea class="form-control" id="contactMessage" rows="3" name="contactMessage"  required
-                            value="" placeholder="Enter Your Message Here..."
-                            ></textarea>
-                          </div>
-                          
-                          <button id="resetButton" type="reset" class="btn btn-secondary">Reset</button>
-                          <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <aside>
-                   
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Social Media</h5>
-                      <p class="card-text">My Connections:</p>
-                      Facebook : <a href=""><i class="card-link fab fa-facebook-square"></i></a>
-                      LinkedIn : <a href=""><i class="card-link fab fa-linkedin"></i></a>
-                      Instagram: <a href=""><i class="card-link fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </aside>
-              </div>
-          </div>
-      </main>
-
-      <footer>
+    <!-- Main Footer -->
+    <footer>
         <nav class="navbar fixed-bottom navbar-light bg-light">
-          <h4 class="display-6">&copy; CopyRight 2020.</h4>
-        </nav>
-      </footer>
+            <div class="container-fluid">
+              <h4><i class="far fa-copyright fa-lg"></i> Copyright 2024.</h4>
+            </div>
+          </nav>
+    </footer>
 
-    <!-- SCRIPT SECTION -->
-    <!-- 3rd Party Libraries -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Script Section-->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- App Scripts -->
-    <script src="./Scripts/app.js"></script>
+    <script src="../Scripts/namespace.js"></script>
+    <script src="../Scripts/contact.js"></script>
+    <script src="../Scripts/user.js"></script>
+    <script src="../Scripts/app.js"></script>
 </body>
 </html>
